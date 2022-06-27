@@ -1,4 +1,5 @@
 import React from "react";
+import "./Shift.css";
 const employees = require("../assets/employees");
 export const Shift = () => {
     return (
