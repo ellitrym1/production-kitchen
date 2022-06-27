@@ -27,9 +27,27 @@ export const Shift = () => {
                                             return (
                                                 <td key={shiftAssigned.day}>
                                                     {shiftAssigned.start ===
-                                                    "OFF"
-                                                        ? "OFF"
-                                                        : `${shiftAssigned.start} - ${shiftAssigned.finish}`}
+                                                    "OFF" ? (
+                                                        "OFF"
+                                                    ) : (
+                                                        <>
+                                                            <input
+                                                                type="time"
+                                                                defaultValue={
+                                                                    shiftAssigned.start
+                                                                }
+                                                                step="1800"
+                                                            />
+                                                            -{" "}
+                                                            <input
+                                                                type="time"
+                                                                defaultValue={
+                                                                    shiftAssigned.finish
+                                                                }
+                                                                step="1800"
+                                                            />
+                                                        </>
+                                                    )}
                                                 </td>
                                             );
                                         }
@@ -37,6 +55,15 @@ export const Shift = () => {
                                 ) : (
                                     <td>{"Shift not available"}</td>
                                 )}
+                                <td>
+                                    <button
+                                        onClick={() => {
+                                            console.log("MEOW");
+                                        }}
+                                    >
+                                        Update
+                                    </button>
+                                </td>
                             </tr>
                         );
                     })}

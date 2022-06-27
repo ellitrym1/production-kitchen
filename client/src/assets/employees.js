@@ -2,31 +2,32 @@ module.exports = [
     {
         id: 0,
         name: "Bob",
+        shift: "morning",
         shiftAssigned: [
             {
                 day: "monday",
-                start: "6:00",
-                finish: "2:00",
+                start: "06:00",
+                finish: "14:00",
             },
             {
                 day: "tuesday",
-                start: "6:00",
-                finish: "2:00",
+                start: "06:00",
+                finish: "14:00",
             },
             {
                 day: "wednesday",
-                start: "6:00",
-                finish: "2:00",
+                start: "06:00",
+                finish: "14:00",
             },
             {
                 day: "thursday",
-                start: "6:00",
-                finish: "2:00",
+                start: "06:00",
+                finish: "14:00",
             },
             {
                 day: "friday",
-                start: "6:00",
-                finish: "2:00",
+                start: "06:00",
+                finish: "14:00",
             },
             {
                 day: "saturday",
@@ -43,17 +44,43 @@ module.exports = [
     {
         id: 1,
         name: "Rob",
-    },
-    {
-        id: 2,
-        name: "Dob",
-    },
-    {
-        id: 3,
-        name: "Hob",
-    },
-    {
-        id: 4,
-        name: "Mob",
+        shift: "morning",
+        shiftAssigned: [
+            {
+                day: "monday",
+                start: "06:00",
+                finish: "14:00",
+            },
+            {
+                day: "tuesday",
+                start: "06:00",
+                finish: "14:00",
+            },
+            {
+                day: "wednesday",
+                start: "06:00",
+                finish: "14:00",
+            },
+            {
+                day: "thursday",
+                start: "06:00",
+                finish: "14:00",
+            },
+            {
+                day: "friday",
+                start: "06:00",
+                finish: "14:00",
+            },
+            {
+                day: "saturday",
+                start: "OFF",
+                finish: "OFF",
+            },
+            {
+                day: "sunday",
+                start: "OFF",
+                finish: "OFF",
+            },
+        ],
     },
 ];
