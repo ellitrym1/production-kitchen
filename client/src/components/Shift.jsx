@@ -21,20 +21,22 @@ export const Shift = () => {
                         return (
                             <tr key={employee.id}>
                                 <td>{employee.name}</td>
-                                {employee.shiftAssigned
-                                    ? employee.shiftAssigned.map(
-                                          (shiftAssigned) => {
-                                              return (
-                                                  <td>
-                                                      {shiftAssigned.start ===
-                                                      "OFF"
-                                                          ? "OFF"
-                                                          : `${shiftAssigned.start} - ${shiftAssigned.finish}`}
-                                                  </td>
-                                              );
-                                          }
-                                      )
-                                    : "Shift not available"}
+                                {employee.shiftAssigned ? (
+                                    employee.shiftAssigned.map(
+                                        (shiftAssigned) => {
+                                            return (
+                                                <td key={shiftAssigned.day}>
+                                                    {shiftAssigned.start ===
+                                                    "OFF"
+                                                        ? "OFF"
+                                                        : `${shiftAssigned.start} - ${shiftAssigned.finish}`}
+                                                </td>
+                                            );
+                                        }
+                                    )
+                                ) : (
+                                    <td>{"Shift not available"}</td>
+                                )}
                             </tr>
                         );
                     })}
