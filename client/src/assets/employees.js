@@ -83,4 +83,46 @@ module.exports = [
             },
         ],
     },
+    {
+        id: 1,
+        name: "Berty",
+        shift: "morning",
+        shiftAssigned: [
+            {
+                day: "monday",
+                start: "OFF",
+                finish: "OFF",
+            },
+            {
+                day: "tuesday",
+                start: "OFF",
+                finish: "OFF",
+            },
+            {
+                day: "wednesday",
+                start: "06:00",
+                finish: "14:00",
+            },
+            {
+                day: "thursday",
+                start: "06:00",
+                finish: "14:00",
+            },
+            {
+                day: "friday",
+                start: "06:00",
+                finish: "14:00",
+            },
+            {
+                day: "saturday",
+                start: "06:00",
+                finish: "14:00",
+            },
+            {
+                day: "sunday",
+                start: "06:00",
+                finish: "14:00",
+            },
+        ],
+    },
 ];
